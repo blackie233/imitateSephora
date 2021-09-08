@@ -1,0 +1,315 @@
+.my-sephora {
+	width: 950px;
+	margin-left: 60px;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.address-content-title {
+	font-size: 16px;
+	border-bottom: 1px solid black;
+	height: 35px;
+	margin-left: 60px;
+	letter-spacing: 2px;
+}
+.add-address-title {
+	font-size: 16px;
+}
+.add-address {
+	font-size: 12px;
+	color: #666;
+	float: right;
+	cursor: pointer;
+}
+.my-sephora-content-wrapper {
+	border-left: 1px solid #999;
+}
+.my-sephora-content {
+	font-size: 0px;
+	padding-left: 60px;
+	padding-top: 20px;
+}
+.my-sephora-content-name {
+	background-color: #F5F5F5;
+	width: 240px;
+	height: 130px;
+	text-align: center;
+	display: inline-block;
+}
+.my-sephora-content-name::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.my-sephora-content-name img {
+	border-radius: 50%;
+	width: 68px;
+	height: 68px;
+	vertical-align: middle;
+}
+.my-sephora-content-name>span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.my-sephora-content-card {
+	display: inline-block;
+	background-color: #F5F5F5;
+	box-sizing: border-box;
+	margin-left: 9px;
+	width: 640px;
+	font-size: 16px;
+	height: 130px;
+	vertical-align: top;
+	position: relative;
+	padding-left: 30px;
+}
+.my-sephora-content-card::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.my-sephora-content-card>.card-img {
+	display: inline-block;
+	width: 148px;
+	height: 94px;
+	vertical-align: middle;
+	background-image: url(images/sep_memberCard.png);
+}
+.my-sephora-content-card-text {
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+.my-sephora-content-card-text>span {
+	display: block;
+	margin-bottom: 10px;
+}
+.my-sephora-content-card>a {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	color: #000;
+	font-size: 12px;
+}
+.my-sephora-content-card-text>p {
+	font-size: 30px;
+}
+.my-sephora-content-integral {
+	display: inline-block;
+	width: 530px;
+	height: 130px;
+	background-color: #F5F5F5;
+	margin-top: 10px;
+	font-size: 12px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+.my-sephora-content-part-title {
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.my-sephora-content-integral>a {
+	float: right;
+	color: #000;
+	text-decoration: underline;
+}
+.my-sephora-content-integral>.integral {
+	font-size: 16px;
+	color: #666;
+	border-bottom: 5px solid #ccc;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.my-sephora-content-integral>.integral>span:hover {
+	color: red;
+}
+.my-sephora-content-integral>.integral>span {
+	font-size: 30px;
+	/* color: #000; */
+}
+.integral-tips {
+	color: #999;
+}
+.my-sephora-content-order {
+	display: inline-block;
+	width: 350px;
+	height: 130px;
+	background-color: #f5f5f5;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-left: 9px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+.my-sephora-content-order>p {
+	font-size: 12px;
+	color: #666;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.my-sephora-content-order a {
+	margin-left: 30px;
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+}
+.my-sephora-content-order a:hover {
+	color: red;
+}
+.my-sephora-content-order a>span {
+	display: inline-block;
+	font-size: 16px;
+	margin: 0 5px;
+	color: red;
+}
+
+/* 我的优惠券 */
+.my-coupon {
+	font-size: 16px;
+	margin-top: 30px;
+}
+.my-coupon-content {
+	margin-left: 60px;
+	padding-top: 30px;
+}
+.coupon-part {
+	display: inline-block;
+	width: 214px;
+	height: 108px;
+	position: relative;
+	background-image: url(images/myaccount_icon2.png);
+	background-position: -120px 0;
+	margin-right: 10px;
+}
+.brank-logo {
+	height: 100%;
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+}
+.brank-logo::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.brank-logo>img {
+	vertical-align: middle;
+}
+.coupon-part>span.coupon-part-price {
+	display: inline-block;
+	font-size: 30px;
+	color: #fff;
+	transform: translateY(-10px);
+}
+.coupon-part>span {
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	transform: translateY(-10px);
+}
+.coupon-text {
+	position: absolute;
+	left: 30px;
+	bottom: 10px ;
+	color: white;
+}
+.coupon-text>span {
+	display: inline-block;
+	font-size: 10px;
+}
+.coupon-text>a {
+	display: inline-block;
+	font-size: 10px;
+	border: 1px solid #fff;
+	padding: 2px 5px;
+	color: #fff;
+	border-radius: 10px;
+}
+.circular {
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 50%;
+}
+
+/* 我的订单 */
+.my-order {
+	margin-top: 30px;
+}
+.my-order-content {
+	margin-left: 50px;
+	font-size: 12px;
+}
+.my-order-content>table {
+	width: 100%;
+	text-align: center;
+}
+.my-order-content>table th {
+	height: 54px;
+	border-bottom: 1px solid #eee;
+}
+.my-order-content>table td {
+	height: 100px;
+}
+.my-order-content>table td>a {
+	display: block;
+	color: #000000;
+}
+.my-order-content>table td>a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+/* 我买过的商品 */
+.buied-goods {
+	margin-top: 50px;
+}
+.buied-goods-content {
+	margin-left: 50px;
+	font-size: 12px;
+}
+.buied-goods-content>table {
+	width: 100%;
+}
+.buied-goods-content>table th {
+	height: 54px;
+	border-bottom: 1px solid #eee;
+}
+.buied-goods-content>table td {
+	height: 130px;
+	text-align: center;	
+}
+.buied-goods-content>table td>a {
+	color: #000000;
+	text-decoration: underline;
+}
+.buied-goods-content>table td>a:hover {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

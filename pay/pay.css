@@ -1,0 +1,335 @@
+body {
+	background-color: #f5f5f5;
+}
+.shopcar-header-wrapper {
+	height: 120px;
+	background-color: white;
+}
+.shopcar-header {
+	padding-top: 30px;
+	height: 100%;
+	box-sizing: border-box;
+}
+.shop-logo {
+	display: inline-block;
+}
+.shop-flow {
+	height: 55px;
+	float: right;
+	border-bottom: 3px solid #CCCCCC;
+	vertical-align: middle;
+	/* padding-bottom: 10px; */
+}
+.shop-flow>div {
+	display: inline-block;
+	height: 50px;
+	margin-right: 100px;
+	background-image: url(images/checkout_header_step.png);
+	/* background-size: auto 100%; */
+	vertical-align:top;
+	padding-bottom: 5px;
+	background-repeat: no-repeat;
+}
+.mycar {
+	width: 82px;
+	background-position: -145px 0;
+}
+.shop-check {
+	background-position: -125px -49px;
+	width: 123px;
+}
+.shop-flow>div.shop-success {
+	width: 96px;
+	background-position: -15px -100px;
+	margin-right: 0px;
+	border-bottom:3px solid #000000;
+}
+.shop-car-top {
+	height: 40px;
+	background-color: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 40px;
+	font-size: 12px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.order-confirm-item-title>h6 {
+	font-size: 20px;
+	font-weight: 500;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.order-confirm-title-notes {
+	font-size: 12px;
+	color: #999;
+}
+.keyer {
+	color: red;
+}
+/* 订单状态 */
+.order-state-content {
+	
+}
+.order-stat-content-ok {
+	text-align: center;
+	background-color: #fff;
+	margin-bottom: 1px;
+	padding: 50px 0;
+}
+.order-stat-content-ok>img {
+	margin-bottom: 20px;
+}
+.order-state-confirm {
+	background-color: #fff;
+	text-align: center;
+	padding: 50px 0;
+}
+.qr-code {
+	display: inline-block;
+	margin-right: 50px;
+}
+.qr-code>img {
+	margin-bottom: 10px;
+}
+.qr-code >span {
+	display: block;
+	font-size: 12px;
+}
+.order-state-confirm-info {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+.order-state-confirm-info>span {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.order-state-confirm-info>span>em {
+	border-right: 1px solid #999;
+	margin: 0 10px;
+}
+.content-service {
+	display: inline-block;
+	width: 130px;
+	height: 20px;
+	line-height: 20px;
+	color: black;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: #eee;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.content-service:after {
+	content: "";
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-image: url(images/checkout-submit-phone.png);
+	float: right;
+	margin: 5px 10px 0 0;
+}
+
+/* 支付方式 */
+.pay-method {
+	margin-top: 50px;
+}
+.pay-method-content {
+	background-color: #fff;
+}
+.pay-method-header {
+	font-size: 0;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.pay-method-header>div {
+	height: 50px;
+	width: 180px;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.pay-method-header>div.active {
+	border: 2px solid red;
+}
+.alipay::before,.wx::before{
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 22px;
+	background-image: url(images/checkout-third-pay.png);
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.wx::before {
+	background-position: -42px 0;
+}
+.card-pay::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 22px;
+	background-image: url(images/SilkPay.png);
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.pay-method-body {
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.pay-method-body>div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	display: none;
+	box-sizing: border-box;
+}
+.pay-method-body>div.active {
+	display: block;
+}
+.pay-alipay {
+	padding-top: 100px;
+	text-align: center;
+}
+.pay-alipay>span {
+	display: inline-block;
+	transform: translateX(-150%);
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.pay-img-btn>img {
+	height: 195px;
+	vertical-align: middle;
+}
+.pay-img-btn>a {
+	display: inline-block;
+	height: 60px;
+	width: 240px;
+	background-color: red;
+	vertical-align: middle;
+	color: #fff;
+	line-height: 60px;
+	font-size: 20px;
+	margin-left: 100px;
+}
+.pay-wx {
+	font-size: 0;
+}
+.pay-wx::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.wx-qr-code {
+	display: inline-block;
+	width: 600px;
+	vertical-align: middle;
+	border-right: 1px solid #ccc;
+	font-size: 20px;
+	text-align: center;
+}
+.wx-qr-code>span {
+	display: block;
+	margin: 50px 0;
+}
+.wx-qr-code>img {
+	width: 250px;
+}
+.pay-wx-tips {
+	display: inline-block;
+	vertical-align: middle;
+}
+.pay-wx-tips>img {
+	margin-left: 50px;
+}
+.pay-card-pay {
+	text-align: center;
+}
+.pay-card-pay::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.pay-card-content {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	text-align: left;
+}
+.pay-card-content>span {
+	display: inline-block;
+	color: #666;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.pay-card-content>span:before {
+	content: "";
+	display: inline-block;
+	margin-right: 5px;
+	width: 14px;
+	height: 14px;
+	background-image: url(images/register_incorrect.png);
+}
+.pay-card-part {
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.pay-card-part>label {
+	display: inline-block;
+	border: #0000FF;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+	font-size: 16px;
+}
+.pay-card-part>input {
+	height: 100%;
+	width: 200px;
+	margin-right: 20px;
+}
+.pay-card-part>button {
+	width: 120px;
+	height: 100%;
+	background-color: #000000;
+	color: #fff;
+}
+.pay-card-ok {
+	
+}
+.pay-card-ok>button {
+	width: 200px;
+	height: 40px;
+	margin-left: 110px;
+}
+.pay-card-ok>span {
+	font-size: 12px;
+	color: #666;
+}
+.pay-card-ok>a {
+	text-decoration: underline;
+	font-size: 12px;
+	color: #000000;
+}
+.pay-card-ok>a:hover {
+	color: red;
+}
+
+
+
+

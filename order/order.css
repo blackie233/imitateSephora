@@ -1,0 +1,228 @@
+.my-order {
+	width: 950px;
+	margin-left: 60px;
+	display: inline-block;
+	vertical-align: top;
+}
+.address-content-title {
+	border-bottom: 1px solid black;
+	height: 35px;
+	margin-left: 60px;
+	letter-spacing: 2px;
+}
+.add-address-title {
+	font-size: 16px;
+}
+.my-order-content {
+	border-left: 1px solid #ccc;
+	padding-left: 60px;
+}
+.my-order-header {
+	width: 100%;
+}
+.my-order-header>ul {
+	height: 40px;
+	line-height: 40px;
+	margin: 20px 0;
+}
+.my-order-header>ul>li {
+	font-size: 16px;
+	display: inline-block;
+	height: 100%;
+	cursor: pointer;
+	margin-right: 50px;
+	box-sizing: border-box;
+	position: relative;
+}
+.my-order-header>ul>li.active {
+	border-bottom: 3px solid black;
+}
+.my-order-header>ul>li:hover {
+	color: red;
+}
+.my-order-header>ul>li>em {}
+.my-order-header>ul>li>ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 0 0 8px -2px #999;
+	transform: translateX(-20%);
+	display: none;
+}
+.my-order-header>ul>li>ul.active {
+	display: none;
+}
+.my-order-header>ul>li>ul>li {
+	display: block;
+	height: 30px;
+	width: 100px;
+	font-size: 12px;
+	padding: 0 20px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+.my-order-body {
+	position: relative;
+	height: 410px;
+}
+.my-order-body-header {
+	height: 65px;
+	line-height: 65px;
+	border-bottom: 1px solid #ccc;
+}
+.my-order-body-header>span {
+	font-size: 12px;
+	margin-right: 70px;
+}
+.order-item {
+	padding: 20px;
+	height: 300px;
+	border-bottom: 1px solid #ccc;
+	display: none;
+}
+.order-item.active {
+	display: block;
+}
+.order-item-left {
+	border-right: 1px solid #ccc;
+	display: inline-block;
+	height: 100%;
+	background-color: #0f0;
+}
+.order-item-left>img {
+	/* width: 100%; */
+	height: 100%;
+}
+.order-item-right {
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+.order-item-right::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.order-item-right>span {
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+	text-align: right;
+}
+
+.order-item-right>span>a {
+	display: block;
+	color: #000;
+}
+.order-item-right>span>a:hover {
+	color: red;
+	text-decoration: underline;
+}
+.order-item.center {
+	text-align: center;
+	line-height: 300px;
+}
+.order-item>span{
+	font-size: 12px;
+	vertical-align: middle;
+}
+.order-item>span>a {
+	color: #000000;
+	text-decoration: underline;
+}
+.order-item>span>a:hover {
+	color: red;
+}
+/* 跳转按钮 */
+.toggle-page {
+	margin: 30px 0 ;
+	text-align: right;
+	font-size: 16px;
+}
+.toggle-page>* {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+.last-page,.next-page {
+	width: 90px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #ccc;
+}
+.to-specify-page {
+	margin-left: 50px;
+}
+.to-specify-page>input {
+	height: 40px;
+	width: 40px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin: 0 10px;
+	padding-left: 20px;
+	vertical-align: top;
+}
+.current-page {
+	width: 40px;
+	background-color: #000;
+	color: #fff;
+	margin: 0 10px;
+}
+.okok {
+	background-color: #000000;
+	color: #fff;
+	width: 60px;
+	margin-left: 20px;
+}
+
+/* 彩泥喜欢 */
+.guess-you-like {
+	margin-bottom: 50px;
+}
+.guessyoulike-header {
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.guessyoulike-header>span {
+	font-weight: normal;
+}
+.guessyoulike-item {
+	width: 222px;
+	height: 320px;
+	font-size: 16px;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	text-align: center;
+	padding: 30px 10px 0;
+	cursor: pointer;
+}
+.guessyoulike-item:hover {
+	border: 1px solid black;
+}
+.guessyoulike-item>img {
+	width: 180px;
+}
+.guessyouliek-item-text {
+	width: 100%;
+	text-align: left;
+	margin-top: 20px;
+}
+.guessyouliek-item-text>h6 {
+	font-size: 16px;
+}
+.guessyouliek-item-text>span {
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

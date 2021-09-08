@@ -1,0 +1,121 @@
+.login-header-con>div {
+	display: inline-block;
+	vertical-align: baseline;
+}
+.login-header-con>div>span{
+	vertical-align: bottom;
+	margin-left: 30px;
+}
+.register-head-right {
+	height: 100%;
+	display: inline-block;
+	font-size: 12px;
+}
+.register-head-right::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.register-head-right>span {
+	display: inline-block;
+	color: #999;
+	vertical-align: middle;
+	/* height: 100%; */
+	vertical-align: middle!important;
+}
+.register-head-right>a {
+	color: #000000;
+	vertical-align: middle;
+}
+.register-head-right>a:hover {
+	text-decoration: underline;
+	color: red;
+}
+.register-bg {
+	padding-top: 64px;
+	height: 800px;
+	background: url(../images/loginsSearchPassword_BgV2.jpg) ;
+	background-size: cover;
+	background-position: 50% 0;
+	/* background-color: #0000FF; */
+	background-repeat: no-repeat;
+}
+.register-content {
+	height: 390px;
+	width: 730px;
+	margin-left:80px;
+}
+.part-item {
+	margin-bottom: 34px;
+	/* height: 30px; */
+}
+.part-item>* {
+	display: inline-block;
+	vertical-align: top;
+}
+.part-item>label {
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}
+.part-item>input {
+	height: 30px;
+	width: 300px;
+}
+.checking-image {
+	height: 32px;
+	width: 120px;
+	background-image: url(../images/checkimg.jpg);
+}
+.part-item>button {
+	height: 32px;
+	width: 120px;
+	color: white;
+	outline: none;
+}
+.register-btn {
+	width: 300px;
+	height: 30px;
+	margin-left: 105px;
+	color: white;
+	background-color: #666;
+	outline: none;
+}
+.register-agree {
+	margin-top: 5px;
+	margin-left: 105px;
+	width: 300px;
+}
+
+/* 错误提示 */
+.input-item {
+	position: relative;
+}
+.error-mropt {
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	font-size: 12px;
+	color: red;
+	display: none;
+}
+.error-mropt::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url(images/LoginIn-icon.png);
+	background-position: -38px -14px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.error-mropt.active {
+	display: block;
+}
+
+
+
+

@@ -1,0 +1,335 @@
+.condition-filtering-wrapper {
+	font-size: 0;
+}
+.condition-header {
+	color: black;
+	font-size: 12px;
+	width: 100%;
+	height: 64px;
+	padding-top: 30px;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+}
+.condition-header>a{
+	color: black;
+}
+.condition-header>a:hover {
+	color: red;
+}
+.condition-header-right {
+	float: right;
+	color: #666;
+}
+/* 品牌 */
+.condition-brank {
+	border-bottom: 1px solid black;
+	padding: 40px 0  20px 0;
+	font-size: 0;
+	position: relative;
+} 
+.condition-title {
+	width: 100px;
+	padding-left: 20px;
+}
+
+
+.condition-brank-content {
+	display: inline-block;
+	width: 950px;
+	font-size: 12px;
+}
+.condition-brank-content>input {
+	margin-bottom: 20px;
+	display: none;
+}
+.condition-brank-content>input.active {
+	display: block;
+}
+.condition-all-barnks {
+	/* width: 950px; */
+}
+.condition-all-barnks>ul {
+	width: 100%;
+	font-size: 0;
+	height: 110px;
+	overflow: hidden;
+}
+.condition-all-barnks>ul.active {
+	overflow: visible;
+}
+.condition-all-barnks>ul>li {
+	width: calc(100% / 7);
+	height: 55px;
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: -1px;
+	margin-right: -1px;
+	border: 1px solid #ccc;
+}
+.condition-all-barnks>ul>li>div {
+	width: 100%;
+	height: 100%;
+}
+.condition-all-barnks>ul>li>div img{
+	width: 100%;
+	height: 100%;
+}
+.condition-all-barnks>ul>li>a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+.condition-all-barnks>ul>li>a:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+.condition-all-barnks>ul>li:hover>a {
+	display: block;
+}
+.condition-title {
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: top;
+}
+.condition-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.condition-brank>.condition-right{
+	top: 40px;
+}
+.condition-multiple-choice {
+	cursor: pointer;
+	font-size: 12px;
+}
+.condition-multiple-choice:hover {
+	color: red;
+}
+.condition-multiple-choice>em {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background-image: url(images/category_icon.png);
+	background-position: -37px -54px;
+	transition: all 0.2s;
+	margin-right: 5px;
+}
+.condition-multiple-choice:hover>em {
+	background-position: -37px -64px;
+}
+.condition-more {
+	margin-left: 5px;
+	cursor: pointer;
+	font-size: 12px;
+}
+.condition-more:hover {
+	color: red;
+}
+.condition-more>em {
+	display: inline-block;
+	height: 4px;
+	width: 8px;
+	background-image: url(images/category_icon.png);
+	background-position: 0 -33px;
+	transition: all 0.2s;
+	margin-left: 5px;
+}
+.condition-more:hover>em {
+	background-position: 0 -42px;
+}
+.condition-more>em.active {
+	background-position: 0 -11px !important;
+}
+.condition-more:hover>em.active {
+	background-position: 0 -20px !important;
+}
+/* 分类 */
+.condition-classification {
+	height: 46px;
+	width: 100%;
+	line-height: 46px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.condition-classification>ul {
+	display: inline-block;
+}
+.condition-classification>ul>li {
+	font-size: 14px;
+	display: inline-block;
+	width: 150px;
+	cursor: pointer;
+}
+.condition-classification>ul>li:hover {
+	color: red;
+}
+
+/* 商品列表 */
+.product-list-wrapper {
+	padding-top: 20px;
+}
+.product-list-header {
+	
+}
+.product-list-header ul{
+	border: 1px solid #999;
+	display: inline-block;
+	font-size: 0;
+}
+.product-list-header ul>li {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 14px;
+	cursor: pointer;
+}
+.product-list-header ul>li.active {
+	background-color: #000000;
+	color: #fff;
+}
+.product-list-header ul>li>span {
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	background-image: url(images/category_icon.png);
+	background-position: -12px -12px;
+	margin-left: 5px;
+}
+.product-list-header ul>li>span.active {
+	background-position: -12px -20px;
+}
+.product-list-header ul>li>span.product-list-header-price {
+	background-position: -12px -28px;
+}
+.product-list-header ul>li>span.product-list-header-price.toptolow {
+	background-image: url(images/category_triangle-down.png);
+	background-position: 0 0;
+}
+.product-list-header ul>li>span.product-list-header-price.lowtotop {
+	background-image: url(images/category_triangle-up.png);
+	background-position: 0 0;
+}
+.product-list-header ul>li>em {
+	display: inline-block;
+	border-left: 1px solid #ccc;
+	height: 10px;
+	width: 1px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+.product-list-header>input {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin: 0 5px 0 10px;
+}
+.product-header-right {
+	float: right;
+}
+.product-header-right>button {
+	width: 33px;
+	height: 33px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	background-image: url(images/flip_arrow.png);
+	vertical-align: middle;
+}
+.product-header-btn-next {
+	background-position: 0 -33px;
+}
+/* 商品 */
+.product-list-body {
+	padding-top: 30px;
+	/* font-size: 0; */
+}
+
+.product-list-item  {
+	white-space: normal;
+	height: 300px;
+	background-color: white;
+	vertical-align: top;
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	padding-top: 20px;
+	border: 1px solid #eee;
+}
+.product-list-item:hover {
+	border: 1px solid black;
+}
+.product-list-item>a {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.product-list-item>a img {
+	width: 180px;
+	height: 180px;
+}
+.product-list-item>span {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	margin: 10px 0;
+	padding: 0 20px;
+}
+.product-list-item>span h6 {
+	font-size: 12px;
+}
+.product-list-item>span a {
+	font-size: 14px;
+	color: black;
+	margin: 10px 0;
+	display: block;
+}
+.product-list-item>span a:hover{
+	color: red;
+}
+.product-list-item>span>span {
+	font-size: 12px;
+	display: block;
+}
+.product-list-item:hover .buy-now {
+	display: block;
+}
+.product-list-item .buy-now {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	color: white;
+	background-color: rgba(0,0,0,.8);
+	z-index: 100;
+	display: none;
+}
+.product-list-item .buy-now::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 18px;
+	background-image: url(images/category_purchace_bag.png);
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+

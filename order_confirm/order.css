@@ -1,0 +1,727 @@
+body {
+	background-color: #f5f5f5;
+}
+.shopcar-header-wrapper {
+	height: 120px;
+	background-color: white;
+}
+.shopcar-header {
+	padding-top: 30px;
+	height: 100%;
+	box-sizing: border-box;
+}
+.shop-logo {
+	display: inline-block;
+}
+.shop-flow {
+	height: 55px;
+	float: right;
+	border-bottom: 3px solid #CCCCCC;
+	vertical-align: middle;
+	/* padding-bottom: 10px; */
+}
+.shop-flow>div {
+	display: inline-block;
+	height: 50px;
+	margin-right: 100px;
+	background-image: url(../images/checkout_header_step.png);
+	/* background-size: auto 100%; */
+	vertical-align:top;
+	padding-bottom: 5px;
+	background-repeat: no-repeat;
+}
+.mycar {
+	width: 82px;
+	background-position: -145px 0;
+}
+.shop-check {
+	background-position: 0px -49px;
+	width: 123px;
+	border-bottom:3px solid #000000;
+}
+.shop-flow>div.shop-success {
+	width: 96px;
+	background-position: -140px -100px;
+	margin-right: 0px;
+}
+.shop-car-top {
+	height: 40px;
+	background-color: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 40px;
+	font-size: 12px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+/* 收货信息 */
+.receive-information-wrapper {
+	
+}
+.order-confirm-item-title {
+	
+}
+.order-confirm-item-title>h6 {
+	font-size: 20px;
+	font-weight: 500;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.add-new-address {
+	font-size: 12px;
+	color: #666;
+	float: right;
+	cursor: pointer;
+}
+.add-new-address:hover {
+	color: red;
+}
+.add-new-address:hover::before {
+	background-position: 0 -30px;
+}
+.add-new-address:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-image: url(images/checkout_icon.png);
+	background-position: 0 -20px;
+	margin-right: 5px;
+}
+
+.receive-information {
+	width: 100%;
+}
+.receive-information-part {
+	height: 55px;
+	background-color: #fff;
+	width: 100%;
+	display: inline-block;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	margin-bottom: 1px;
+}
+.receive-information-part.active {
+	border: 3px solid red;
+}
+.receive-information-part::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.receive-information-part>span {
+	font-size: 12px;
+	color: #999;
+}
+.receive-information-part>span:after {
+	content: "";
+	display: inline-block;
+	height: 12px;
+	width: 1px;
+	border-right: 1px solid #ccc;
+	margin: 0 10px;
+}
+.receive-information-part>a {
+	font-size: 12px;
+	background-color: #000000;
+	padding: 2px 5px;
+	color: #fff;
+	border-radius: 15px;
+	margin-left: 20px;
+	display: none;
+}
+.receive-information-part>a.active {
+	display: inline-block;
+}
+.receive-information-part-right {
+	float: right;
+	height: 100%;
+}
+.receive-information-part-right::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.receive-information-part-right>span {
+	font-size: 12px;
+	color: #999;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.set-default-address.active {
+	display: inline-block;
+}
+.set-default-address {
+	background-color: red;
+	padding: 2px 5px;
+	color: #fff !important;
+	border-radius: 15px;
+	display: none;
+}
+
+
+.receive-information-part-right>span.edit:hover,.receive-information-part-right>span.remove:hover {
+	color: red;
+}
+
+/* 支付方式 */
+.pay-method {
+	margin-top: 50px;
+}
+.pay-method-content {
+	background-color: #fff;
+	padding: 20px;
+}
+.pay-method-content>span {
+	display: block;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	border: 3px solid red;
+	text-align: center;
+}
+.pay-method-content>span::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url(images/checkout_paywith_icon.png);
+	background-position: -26px 0;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.delivery-info {
+	margin-top: 50px;
+}
+.order-confirm-title-notes {
+	font-size: 12px;
+	color: #999;
+}
+.delivery-info-content {
+	
+}
+.deliver-info-part {
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	margin-bottom: 1px ;
+	padding: 0 20px;
+}
+.deliver-info-part>input {
+	vertical-align: middle;
+}
+.deliver-info-part>span {
+	font-size: 12px;
+}
+
+/* 商品清单 */
+.purchased-list {
+	margin-top: 50px;
+}
+.purchased-list-content {
+	
+}
+.purchased-list-content-header {
+	height: 54px;
+	font-size: 12px;
+	line-height: 54px;
+	background-color: #fff;
+	margin-bottom: 1px;
+}
+.goods-info {
+	display: inline-block;
+	margin-left: 120px;
+}
+.purchased-list-content-header-right {
+	float: right;
+	padding-right: 30px;
+}
+.purchased-list-content-header-right>span {
+	margin-left: 70px;
+}
+.purchased-list-part {
+	height: 150px;
+	background-color: #fff;
+	font-size: 0;
+}
+.purchased-list-part::before {
+	display: inline-block;
+	content: "";
+	height: 100%;
+	vertical-align: middle;
+}
+.purchased-list-part-img {
+	display: inline-block;
+	height: 100%;
+	width: 120px;
+	vertical-align: top;
+	text-align: center;
+}
+.purchased-list-part-img::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.purchased-list-part-img img {
+	width: 74px;
+	height: 74px;
+	vertical-align: middle;
+}
+.purchased-list-part-info {
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.purchased-list-part-info h6{
+	margin-bottom: 5px;
+}
+.purchased-list-part-info>span {
+	display: block;
+	margin-bottom: 5px;
+}
+.purchased-list-part-info>img {
+	width: 66px;
+	height: 18px;
+}
+.purchased-list-part-right {
+	float: right;
+	font-size: 12px;
+	height: 100%;
+	padding-right: 45px;
+}
+.purchased-list-part-right::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.purchased-list-part-right>span {
+	vertical-align: middle;
+	margin-left: 90px;
+}
+/* 礼物包装 */
+.gift-wrapper {
+	margin-top: 50px;
+}
+.gift-wrapper-content {
+	background-color: #fff;
+	padding: 25px 30px;
+}
+.gift-wrapper-content>* {
+	vertical-align: middle;
+}
+.gift-wrapper-content>span {
+	font-size: 12px;
+}
+
+
+/* 优惠券 */
+.coupon {
+	margin-top: 50px;
+}
+.discount-code {
+	width: 95px;
+	height: 20px;
+	background-color: #000000;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	float: right;
+	text-align: center;
+}
+.coupon-content {
+	background-color: #fff;
+	padding: 30px;
+}
+.coupon-part {
+	display: inline-block;
+	width: 214px;
+	height: 116px;
+	position: relative;
+	background-image: url(images/sprite_checkout_coupons.png);
+	background-position: -506px 0;
+	margin-right: 10px;
+}
+.brank-logo {
+	height: 100%;
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+}
+.brank-logo::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.brank-logo>img {
+	vertical-align: middle;
+}
+.coupon-part>span.coupon-part-price {
+	display: inline-block;
+	font-size: 30px;
+	color: #fff;
+	transform: translateY(-10px);
+}
+.coupon-part>span {
+	font-size: 14px;
+	color: #fff;
+}
+.coupon-text {
+	position: absolute;
+	left: 50px;
+	bottom: 10px ;
+	color: white;
+}
+.coupon-text>span {
+	display: block;
+	font-size: 12px;
+}
+.circular {
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 50%;
+}
+
+
+.discount-code-dialog-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+.discount-code-dialog-wrapper.active {
+	display: block;
+}
+.discount-code-dialog {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 440px;
+	height: 270px;
+	background-color: #fff;
+}
+.discount-code-dialog-header {
+	height: 58px;
+	width: 100%;
+	background-color: #000000;
+	color: #fff;
+	text-align: center;
+	line-height: 58px;
+	font-size: 20px;
+}
+.discount-code-dialog-header>a {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-image: url(images/close-icon.png);
+}
+.discount-code-dialog-body {
+	width: 100%;
+	text-align: center;
+}
+.input-code {
+	padding: 50px 0;
+}
+.input-code>span {
+	margin-right: 20px;
+}
+.input-code>input {
+	height: 20px;
+	width: 200px;
+}
+.discount-code-dialog-body>button {
+	height: 30px;
+	width: 100px;
+	background-color: #000000;
+	color: #fff;
+	transform: translateX(-15px);
+}
+
+.total-goods {
+	background-color: #fff;
+	margin-top: 30px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.total-goods>span {
+	display: block;
+	text-align: right;
+}
+.goods-price {
+	display: inline-block;
+	width: 100px;
+}
+
+/* 结算 */
+.shop-cart-bottom-wrapper {
+	height: 60px;
+}
+.shop-cart-bottom {
+	background-color: #fff;
+	height: 60px;
+	margin-top: 50px;
+	padding-left: 20px ;
+	box-sizing: border-box;
+}
+.shop-cart-bottom::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.shop-cart-bottom.fixed-b {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.shop-cart-bottom>* {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+}
+.shop-cart-bottom>span {
+	margin-left: 20px;
+}
+.shop-cart-bottom>em {
+	border-right: 2px solid #999;
+	width: 2px;
+	box-sizing: border-box;
+	height: 15px;
+	margin-left: 20px;
+}
+.shop-cart-bottom>a {
+	margin-left: 20px;
+	width: 130px;
+	height: 20px;
+	line-height: 20px;
+	color: black;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: #eee;
+}
+.shop-cart-bottom>a:after {
+	content: "";
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-image: url(images/checkout-submit-phone.png);
+	float: right;
+	margin: 5px 10px 0 0;
+}
+.shop-confirm {
+	float: right ;
+	margin-top: 8px;
+	margin-right: 30px;
+	text-align: right;
+}
+.shop-confirm>p {
+	color: #666;
+	margin-bottom: 5px;
+}
+.total-wrapper {
+	font-size: 16px;
+}
+.shop-confirm>p>span {
+	color: black;
+	margin: 5px;
+}
+.shop-confirm>p>em {
+	display: inline-block;
+	background-image: url(images/checkout_first_minu.png);
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.shop-cart-bottom>button {
+	height: 100%;
+	width: 140px;
+	background-color: #FF0000;
+	border: none;
+	float: right;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+.shop-cart-bottom>button>a {
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.shop-cart-bottom>button>a::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/* 删除修改模态框 */
+.remove-dialog-wrapper {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+.remove-dialog-wrapper.active{
+	display: block;
+}
+.remove-dialog {
+	width: 400px;
+	height: 260px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 20px;
+	text-align: center;
+	font-size: 0;
+	/* z-index: 99; */
+}
+.remove-dialog-close {
+	display: inline-block;
+	float: right;
+	height: 20px;
+	width: 20px;
+	background-image: url(images/sprite_popup_alert_delete.png);
+}
+
+.remove-dialog-mark {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 50px auto 20px;
+	background-image: url(images/sprite_popup_alert_delete.png);
+	background-position: 0 -20px;
+}
+.remove-dialog-content {
+	font-size: 20px;
+	font-weight: 600;
+}
+.remove-dialog-line {
+	display: block;
+	width: 40px;
+	height: 20px;
+	margin: 20px auto 40px;
+	border-bottom: 1px solid #999;
+}
+.remove-dialog-ok,.remove-dialog-cencle {
+	height: 30px;
+	width: 100px;
+	margin: 0 20px;
+}
+.remove-dialog-ok {
+	color: #fff;
+}
+/* 新增编辑地址模态框 */
+.editoraddd-dialog-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+.editoraddd-dialog-wrapper.active {
+	display: block;
+}
+.editoraddd-dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	width: 800px;
+}
+.editoraddd-dialog-header {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #000000;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+.editoraddd-dialog-header>.btn-cencle{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	background-image: url(images/sprite-module-popup.png);
+}
+.editoraddd-dialog-body {
+	width: 100%;
+	height: 510px;
+	background-color: #fff;
+	font-size: 14px;
+	padding: 30px 50px;
+	box-sizing: border-box;
+}
+.editoraddd-dialog-body-item {
+	height: 30px;
+	margin-bottom: 30px;
+}
+.editoraddd-dialog-body-item>label {
+	display: inline-block;
+	text-align: right;
+	width: 80px;
+	height: 100%;
+	margin-right: 30px;
+}
+.editoraddd-dialog-body-item>input {
+	height: 100%;
+	width: 180px;
+	box-sizing: border-box;
+}
+.editoraddd-dialog-body-item>select {
+	height: 100%;
+	width: 120px;
+	box-sizing: border-box;
+	margin-right: 20px;
+}
+.set-address {
+	margin-left: 110px;
+	margin-bottom: 30px;
+}
+.editoraddd-dialog-btn {
+	margin-left: 110px;
+	font-size: 0;
+}
+.editoraddd-dialog-body-ok,.editoraddd-dialog-body-cencle {
+	width: 140px;
+	height: 30px;
+	font-size: 12px;
+}
+.editoraddd-dialog-body-ok {
+	background-color: #000000;
+	color: #fff;
+	margin-right: 20px;
+}

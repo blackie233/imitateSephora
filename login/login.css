@@ -1,0 +1,238 @@
+.login-header {
+	height: 89px;
+	background-color: #fff;
+	/* line-height: 89px; */
+}
+.login-header-con {
+	height: 100%;
+}
+.login-header-con::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0px;
+}
+.logo {
+	vertical-align: middle;
+	display: inline-block;
+	/* height: 100%; */
+}
+.logo img {
+	width: 100%;
+	/* margin-top: 30px; */
+}
+.main-content-wrapper {
+	background-position: -200px 0;
+	height: 610px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background: transparent no-repeat 50% 0;
+	background-image: url(./image/hp_loginlage_20210722.jpg);
+}
+.main-content {
+	height: 100%;
+	position: relative;
+}
+.login {
+	width: 360px;
+	height: 380px;
+	background-color: #fff;
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+.login-main {
+	height: 100%;
+	width: 100%;
+	padding-top: 30px;
+	box-sizing: border-box;
+	position: relative;
+}
+.login-main h4 {
+	margin-bottom: 40px;
+	font-weight: 500;
+}
+.input-item {
+	/* width: 100%; */
+	position: relative;
+	height: 30px;
+	border: 1px solid #ccc;
+	/* background-color: #666666; */
+	box-sizing: border-box;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.input-item:hover {
+	border-bottom: 1px solid black;
+}
+.input-item.active {
+	border-bottom: 1px solid black !important;
+}
+.login-name-icon {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+	margin: 5px;
+	background-image: url(../images/LoginIn-icon.png);
+	background-position: 0 -20px;
+}
+.login-pwd-icon {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+	margin: 5px;
+	background-image: url(../images/LoginIn-icon.png);
+}
+.input-item>input {
+	width: 298px;
+	height: 100%;
+	outline: none;
+	border: none;
+}
+.pl-30 {
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+.clear-icon {
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	right: 0;
+	top: 0;
+	margin: 5px;
+	background-image: url(../images/LoginIn-icon.png);
+	background-position: -20px -18px;
+	/* display: none; */
+	opacity: 0;
+	z-index: 99;
+}
+.clear-icon.error {
+	opacity: 1;
+	background-position: -20px -36px;
+}
+.clear-yes {
+	opacity: 1;
+	background-position: -20px 0;
+}
+.clear-show {
+	/* display: block; */
+	opacity: 1;
+}
+.login-main>a {
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 20px;
+}
+.login-main>a:hover {
+	color: red;
+}
+
+.btn-login {
+	width: 100%;
+	height: 40px;
+	color: white;
+	margin-bottom: 5px;
+	transition: all 0.5s;
+	border: none;
+}
+.btn-login-black {
+	background-color: black !important;
+}
+.btn-login-red {
+	background-color: red !important;
+}
+.agree {
+	
+}
+.agree-check {
+	width: 16px;
+	height: 16px;
+}
+.agree span {
+	font-size: 12px;
+	vertical-align: top;
+}
+.agree>span>a {
+}
+.login-botton {
+	
+}
+.login-botton>a {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin-right: 5px;
+	background-image: url(../images/LoginIn-icon.png);
+}
+.weixin {
+	background-position: -56px 0;
+}
+.weixin:hover {
+	background-position: -80px 0;
+}
+.qq {
+	background-position: -56px -24px;
+}
+.qq:hover {
+	background-position: -80px -24px;
+}
+.weibo {
+	background-position: -56px -48px;
+}
+.weibo:hover {
+	background-position: -80px -48px;
+}
+.login-botton>span {
+	font-size: 12px;
+	padding-top: 2px;
+	float: right;
+}
+.login-botton>span>a {
+	color: red;
+}
+.login-botton>span>a:hover {
+	text-decoration: underline;
+}
+.login-botton>span>a:after {
+	content: "";
+	display: inline-block;
+	width: 4px;
+	height: 8px;
+	background-image: url(../images/LoginIn-icon.png);
+	background-position: -52px 0;
+	margin-left: 5px;
+}
+
+/* 错误提示 */
+.login-tips {
+	display: none;
+	font-size: 12px;
+	color: red;
+	position: absolute;
+	left: 30px;
+	top: 60px;
+}
+.login-tips.active {
+	display: block;
+}
+.login-tips::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url(image/LoginIn-icon.png);
+	background-position: -38px -14px;
+	vertical-align: middle;
+	margin-right: 5px;
+}

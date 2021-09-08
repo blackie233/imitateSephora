@@ -1,0 +1,463 @@
+body {
+	background-color: #f5f5f5;
+}
+.card-pink {
+	vertical-align: middle;
+	margin-left: 3px;
+}
+.shopcar-header-wrapper {
+	height: 120px;
+	background-color: white;
+}
+.shopcar-header {
+	padding-top: 30px;
+	height: 100%;
+	box-sizing: border-box;
+}
+.shop-logo {
+	display: inline-block;
+}
+.shop-flow {
+	height: 55px;
+	float: right;
+	border-bottom: 3px solid #CCCCCC;
+	vertical-align: middle;
+	/* padding-bottom: 10px; */
+}
+.shop-flow>div {
+	display: inline-block;
+	height: 50px;
+	margin-right: 100px;
+	background-image: url(../images/checkout_header_step.png);
+	/* background-size: auto 100%; */
+	vertical-align:top;
+	padding-bottom: 5px;
+	background-repeat: no-repeat;
+}
+.mycar {
+	width: 82px;
+	background-position: -22px 0;
+	border-bottom:3px solid #000000;
+}
+.shop-check {
+	background-position: -125px -50px;
+	width: 123px;
+}
+.shop-flow>div.shop-success {
+	width: 96px;
+	background-position: -140px -100px;
+	margin-right: 0px;
+}
+.shop-car-top {
+	height: 40px;
+	background-color: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 40px;
+	font-size: 12px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.shopcar-main {
+	background-color: #fff;
+}
+.shopcar-main-top {
+	height: 47px;
+	line-height: 47px;
+	padding: 0 20px;
+	border-bottom: 1px solid #999;
+	font-size: 0;
+}
+.shopcar-main-top>span {
+	font-size: 12px;
+	vertical-align: middle;
+}
+.checkbox {
+	height: 14px;
+	width: 14px;
+	vertical-align: middle;
+	outline: none;
+	/* background-image: url(../images/module_input_checkbox.png);
+	position: -28px 0;
+	border: none; */
+}
+.checkall {
+	margin-right: 5px;
+}
+.allch {
+	margin-right: 100px;
+}
+.goods-information {
+	margin-right: 400px;
+}
+.price {
+	display: inline-block;
+	width: 150px;
+}
+.count {
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+}
+.price-count {
+	margin-left: 80px;
+	width: 150px;
+	display: inline-block;
+}
+.del {}
+.shop-good {
+	display: inline-block;
+	height: 170px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 30px 15px 0 20px;
+	font-size: 0;
+}
+.shop-good::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+.shop-good>* {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+}
+.shop-good>.checkbox {
+	/* vertical-align: middle; */
+	margin-top: 50px;
+}
+.shop-img {
+	width: 90px;
+	height: 90px;
+	padding: 0 20px;
+}
+.shop-img img {
+	width: 100%;
+}
+.shop-information {
+	/* margin-right: 230px; */
+	width: 450px;
+}
+.shop-information>* {
+	display: block;
+	margin-bottom: 10px;
+}
+.shop-information>h6 {
+	
+}
+.shop-information>a {
+	color: black;
+}
+.shop-information>span {
+	color: #666;
+}
+.shop-good .count {
+	text-align: center;
+	/* margin-right: 90px; */
+}
+.count-main {
+	box-sizing: border-box;
+	font-size: 0;
+}
+.goods-count {
+	font-size: 12px;
+	width: 37px;
+	height: 21px;
+	line-height: 21px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	vertical-align: top;
+	display: inline-block;
+}
+.btn-decrease,.btn-increase {
+	width: 21px;
+	height: 21px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: inline-block;
+}
+.count>span {
+	display: block;
+	margin-top: 5px;
+}
+.del>span {
+	display: block;
+	width: 19px;
+	height: 19px;
+	background-image: url(./images/checkout_icon.png);
+	cursor: pointer;
+}
+/* 购物车底部 */
+.shop-cart-bottom-wrapper {
+	height: 60px;
+}
+.shop-cart-bottom {
+	background-color: #fff;
+	height: 60px;
+	margin-top: 50px;
+	padding-left: 20px ;
+	box-sizing: border-box;
+}
+.shop-cart-bottom::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.shop-cart-bottom.fixed-b {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.shop-cart-bottom>* {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+}
+.shop-cart-bottom>span {
+	margin-left: 20px;
+}
+.shop-cart-bottom>em {
+	border-right: 2px solid #999;
+	width: 2px;
+	box-sizing: border-box;
+	height: 15px;
+	margin-left: 20px;
+}
+.shop-cart-bottom>a {
+	margin-left: 20px;
+	width: 130px;
+	height: 20px;
+	line-height: 20px;
+	color: black;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: #eee;
+}
+.shop-cart-bottom>a:after {
+	content: "";
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-image: url(images/checkout-submit-phone.png);
+	float: right;
+	margin: 5px 10px 0 0;
+}
+.shop-confirm {
+	float: right ;
+	margin-top: 8px;
+	margin-right: 30px;
+	text-align: right;
+}
+.shop-confirm>p {
+	color: #666;
+	margin-bottom: 5px;
+}
+.total-wrapper {
+	font-size: 16px;
+}
+.shop-confirm>p>span {
+	color: black;
+	margin: 5px;
+}
+.shop-confirm>p>em {
+	display: inline-block;
+	background-image: url(images/checkout_first_minu.png);
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.shop-cart-bottom>button {
+	height: 100%;
+	width: 140px;
+	background-color: #FF0000;
+	border: none;
+	float: right;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+.shop-cart-bottom>button>a {
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.shop-cart-bottom>button>a::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/* 删除模态框 */
+.remove-dialog-wrapper {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+.remove-dialog-wrapper.active{
+	display: block;
+}
+.remove-dialog {
+	width: 400px;
+	height: 260px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 20px;
+	text-align: center;
+	font-size: 0;
+	/* z-index: 99; */
+}
+.remove-dialog-close {
+	display: inline-block;
+	float: right;
+	height: 20px;
+	width: 20px;
+	background-image: url(images/sprite_popup_alert_delete.png);
+}
+
+.remove-dialog-mark {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 50px auto 20px;
+	background-image: url(images/sprite_popup_alert_delete.png);
+	background-position: 0 -20px;
+}
+.remove-dialog-content {
+	font-size: 20px;
+	font-weight: 600;
+}
+.remove-dialog-line {
+	display: block;
+	width: 40px;
+	height: 20px;
+	margin: 20px auto 40px;
+	border-bottom: 1px solid #999;
+}
+.remove-dialog-ok,.remove-dialog-cencle {
+	height: 30px;
+	width: 100px;
+	margin: 0 20px;
+}
+.remove-dialog-ok {
+	color: #fff;
+}
+
+
+
+
+
+/* 猜你喜欢 */
+.guess-you-like {
+	/* height: 300px; */
+	margin-top: 100px;
+	/* margin-bottom: 20px; */
+}
+.guess-you-like-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+.btn-guess-you-like-toggle {
+	float: right;
+	display: inline-block;
+	border-radius: 15px;
+	font-size: 0;
+	overflow: hidden;
+}
+.btn-last,.btn-next {
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	width: 50px;
+	height: 30px;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+.btn-last.disable,.btn-next.disable {
+	background-color: #CCCCCC;
+}
+.btn-last {
+	margin-right: 1px;
+}
+.guess-youlike-content {
+	overflow: hidden;
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 300px;
+	font-size: 0;	
+	position: relative;
+}
+.items-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+	transition: all 0.5s;
+}
+.guess-youlike-item {
+	white-space: normal;
+	height: 100%;
+	background-color: white;
+	vertical-align: top;
+	height: 100%;
+	display: inline-block;
+	width: 20%;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 20px;
+}
+.guess-youlike-item>a img {
+	width: 180px;
+	height: 180px;
+}
+.guess-youlike-item>span {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	padding: 0 20px;
+}
+.guess-youlike-item>span h6 {
+	font-size: 12px;
+}
+.guess-youlike-item>span a {
+	font-size: 14px;
+	color: black;
+	margin: 5px 0;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.guess-youlike-item>span a:hover{
+	color: red;
+}
+.guess-youlike-item>span span {
+	font-size: 12px;
+	display: block;
+}

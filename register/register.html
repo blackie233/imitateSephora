@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../public/css/reset.css">
+		<link rel="stylesheet" href="../public/css/public.css">
+		<link rel="stylesheet" href="../login/login.css">
+		<link rel="stylesheet" type="text/css" href="./register.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="tonglan login-header">
+			<div class="w login-header-con">
+				<div>
+					<a class="logo" href=""><img src="../images/sep_top_Logo.png" alt=""></a>
+					<span>欢迎注册</span>
+				</div>
+				<div class="header-right register-head-right">
+					<span>已有账号？</span><a href="../login/login.html">立即登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="tonglan register-bg">
+			<div class="w register-main">
+				<div class="register-content">
+					<div class="part-item">
+						<label for="">手机号</label>
+						<div class="input-item">
+							<input class="phone-num" name="phoneNum" type="text" placeholder="请输入你的手机号">
+							<span class="clear-icon"></span>
+							<span class="phone-tips error-mropt">请填写手机号</span>
+						</div>
+					</div>
+					<div class="part-item">
+						<label for="">图形验证码</label>
+						<div class="input-item">
+							<input class="checking-img" name="checkingImg" type="text">
+							<span class="clear-icon"></span>
+							<span class="error-mropt"></span>
+						</div>
+						<div class="checking-image"></div>
+					</div>
+					<div class="part-item">
+						<label for="">短信验证码</label>
+						<div class="input-item">
+							<input class="msg-prov" name="checkingText" type="text">
+							<span class="clear-icon"></span>
+							<span class="error-mropt"></span>
+						</div>
+						<button class="btn-check" type="button" disabled >获取验证码</button>
+					</div>
+					<div class="part-item">
+						<label for="">输入密码</label>
+						<div class="input-item">
+							<input class="input-pwd" name="pwd" type="password" placeholder="8-16位大小写字母、数字和特殊字符的组合">
+							<span class="clear-icon"></span>
+							<span class="pwd-tips error-mropt">密码不能少于6位</span>
+						</div>
+					</div>
+					<div class="part-item">
+						<label for="">确认密码</label>
+						<div class="input-item">
+							<input class="input-pwd-confirm" name="pwd2" type="password" placeholder="请再次输入密码">
+							<span class="clear-icon"></span>
+							<span class="pwd-tips2 error-mropt">两次输入的密码不一致</span>
+						</div>
+					</div>
+					<button disabled class="register-btn" type="button">同意条款并注册</button>
+					<div class="agree register-agree">
+						<input class="agree-check" type="checkbox">
+						<span>已同意并阅读<a href="">《丝芙兰用户服务协议》</a>和<a href="">《丝芙兰隐私政策》</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tonglan footer-wrapper">
+			<div class="w footer">
+				<a href="">沪公网安备 31010602003121号</a>
+				<a href="">ICP备案序号:沪ICP备05026645号</a>
+				<a href="">食品经营许可证</a>
+				<a href="">网站使用条款</a>
+				<a href="">严正声明</a>
+				<span>本网站隶属于丝芙兰（上海）化妆品销售有限公司<a href="">(企业法人营业执照)</a>预付卡信息对接唯一标识：310101F5201530100309</span>
+			</div>
+		</div>
+		
+		<script src="../public/js/js-cookie.js"></script>
+		<script src="register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
